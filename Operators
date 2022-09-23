@@ -1,0 +1,95 @@
+#Sum and Difference
+a=int(input())
+b=int(input())
+print(a+b)
+print(a-b)
+
+#Product and Division
+a=int(input())
+b=int(input())
+print(a*b)
+print(a//b)
+print(a%b)
+
+#Swapping of two numbers
+a=int(input())
+b=int(input())
+a,b=b,a
+print(a)
+print(b)
+
+#Swapping without third variable
+a=int(input())
+b=int(input())
+temp=a
+a=b
+b=temp
+print(a)
+print(b)
+
+#Average calculation
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+e=int(input())
+f=(a+b+c+d+e)/5
+print("%.2f"%f)
+
+#Alice in wonderland
+def sum_of_digit(n):
+    if n< 10:
+        return n
+    else:
+        return n%10 + sum_of_digit(n//10)
+number=int(input("Enter number:"))
+print("Sum of digit is",sum_of_digit(number))
+
+#Area calculation
+a=int(input())
+b=int(input())
+c=int(input())
+d=float(input())
+f=a*a
+e=b*c
+g=3.14*d*d
+print(f)
+print(e)
+print("%.2f"%g)
+
+#Fencing the ground
+a=int(input())
+b=int(input())
+c=2*(a+b)
+d=a*b
+print("Required length is %d m"%c)
+print("Required quantity of carpet is %d sqm"%d)
+
+#Power of a number
+a=int(input())
+b=int(input())
+a=pow(a,b)
+print(a)
+
+#Simple interest
+p=int(input())
+t=int(input())
+r=float(input())
+i=(p*t*r)/100
+print("%.2f"%i)
+
+#Splitting into teams
+a=int(input())
+b=int(input())
+c=a//b
+e=a%b
+print("The number of students in each team is %d and left out is %d"%(c,e))
+
+#Three Idiots
+x1=int(input())
+y1=int(input())
+x2=int(input())
+y2=int(input())
+xp=(x1+x2)/2
+yp=(y1+y2)/2
+print("Binoy's house is located at (%.1f,%.1f)"%(xp,yp))
